@@ -15,13 +15,16 @@ nav.sideNav
 </template>
 <style lang="scss" scoped>
 .sideNav {
-  height: 100vh;
+  position: sticky;
+  overflow-y: scroll;
+  min-height: 100vh;
   min-width: 280px;
   max-width: 280px;
   width: 25%;
   background-color: #F2F2F2;
   overflow: hidden;
-  padding-top: 35px;  }
+  padding-top: 35px;  
+}
 .sideNav a {
   padding: 8px 8px 8px 32px;
   margin: 0 auto;

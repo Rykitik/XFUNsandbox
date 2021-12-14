@@ -30,8 +30,8 @@
   left: 0;
   right: 0;
   min-width: 700px;
-  width: 70%;
-  height: 75vh;
+  width: 60%;
+  height: 70vh;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
   z-index: 65;
