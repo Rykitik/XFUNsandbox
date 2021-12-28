@@ -10,9 +10,17 @@
 <script>
 import PostComponent from "../components/elements/PostComponent";
 export default {
-  name: "Feed",
+  name: "Fresh",
   components: {
     PostComponent,
+  },
+  metaInfo: {
+    title: "Свежие посты",
+    titleTemplate: "Свежее",
+    htmlAttrs: {
+      lang: "ru",
+      amp: true,
+    },
   },
 };
 </script>

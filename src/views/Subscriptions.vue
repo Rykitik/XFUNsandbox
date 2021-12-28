@@ -1,9 +1,1 @@
-<template lang="pug">
-.subscriptions
-  h1 Подписки
-</template>
-<style lang="scss" scoped>
-.subscriptions {
-  padding: 15px 25px;
-}
-</style>
+https://rawcdn.githack.com/Rykitik/XFUNsandbox/a985b24e9b4490c1eb572cd6efa46f9cc7a5ae18/src/views/Subscriptions.vue

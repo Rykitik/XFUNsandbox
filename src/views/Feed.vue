@@ -14,6 +14,14 @@ export default {
   components: {
     PostComponent,
   },
+  metaInfo: {
+    title: "Новости",
+    titleTemplate: "Новстная лента",
+    htmlAttrs: {
+      lang: "ru",
+      amp: true,
+    },
+  },
 };
 </script>
 
