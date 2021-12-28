@@ -5,12 +5,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "Категория " + this.$route.params.topicID,
-    titleTemplate: "%s - Yay!",
-    htmlAttrs: {
-      lang: "ru",
-      amp: true,
-    },
+    title: "Сообщесто",
+    titleTemplate: "%s | XFUN",
   },
 };
 </script>

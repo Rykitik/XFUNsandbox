@@ -15,12 +15,8 @@ export default {
     PostComponent,
   },
   metaInfo: {
-    title: "Свежие посты",
-    titleTemplate: "Свежее",
-    htmlAttrs: {
-      lang: "ru",
-      amp: true,
-    },
+    title: "Свежее",
+    titleTemplate: "%s | XFUN",
   },
 };
 </script>

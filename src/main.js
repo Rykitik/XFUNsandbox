@@ -7,6 +7,10 @@ import VueMeta from "vue-meta";
 Vue.config.productionTip = false;
 
 Vue.use(VueMeta, {
+  keyName: "metaInfo",
+  attribute: "data-vue-meta",
+  ssrAttribute: "data-vue-meta-server-rendered",
+  tagIDKeyName: "vmid",
   refreshOnceOnNavigation: true
 });
 new Vue({

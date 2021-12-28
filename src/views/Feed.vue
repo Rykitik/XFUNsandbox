@@ -16,11 +16,7 @@ export default {
   },
   metaInfo: {
     title: "Новости",
-    titleTemplate: "Новстная лента",
-    htmlAttrs: {
-      lang: "ru",
-      amp: true,
-    },
+    titleTemplate: "%s | XFUN",
   },
 };
 </script>
