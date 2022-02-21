@@ -4,8 +4,6 @@ import router from "./router";
 import store from "./store";
 import VueMeta from "vue-meta";
 
-Vue.config.productionTip = false;
-
 Vue.use(VueMeta, {
   keyName: "metaInfo",
   attribute: "data-vue-meta",
@@ -13,6 +11,8 @@ Vue.use(VueMeta, {
   tagIDKeyName: "vmid",
   refreshOnceOnNavigation: true
 });
+Vue.config.productionTip = false;
+
 new Vue({
   router,
   store,

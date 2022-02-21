@@ -5,7 +5,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isViewMenu: true,
-    isViewAuth: false,
+    isViewAuth: false
   },
   mutations: {
     changeViewMenu(state) {

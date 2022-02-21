@@ -14,14 +14,21 @@
           a(onclick="", aria-label="фотография")
             img(src="~@/assets/post.jpg")
         .wraps
-          .likeWrap 1 like
-          .commentWrap 3 comments
+          .likeWrap 
+            img(src="~@/assets/like.png", width="60%")
+            .count 1
+          .commentWrap 
+            img(src="~@/assets/repost.png", width="60%")
+            .count 3
 </template>
 <style scoped>
+.wraps {
+  margin-top: 5px;
+}
 .post {
   width: 100%;
   background-color: #FFF;
-  padding: 15px 25px;
+  padding: 15px 25px 10px 25px;
   border-radius: 10px;
   margin-bottom: 35px;
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.25));
@@ -58,9 +65,21 @@
 }
 .likeWrap,
 .commentWrap {
+  display: flex;
+  justify-content: space-between;
   background-color: #F2F2F2;
   border-radius: 15px;
   padding: 5px 10px;
   margin: 3px;
+}
+.likeWrap:hover,
+.commentWrap:hover {
+  background-color: #FFEDED;
+  cursor: pointer;
+}
+.likeWrap img,
+.commentWrap img {
+  width: 50%;
+  height: auto;
 }
 </style>
