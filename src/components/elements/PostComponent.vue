@@ -14,13 +14,30 @@
           a(onclick="", aria-label="фотография")
             img(src="~@/assets/post.jpg")
         .wraps
-          .likeWrap 
+          .likeWrap(v-if="isLiked", @click="changeLikeState")
+            img(src="~@/assets/heart.png", width="60%")
+            .count 2
+          .likeWrap(v-else, @click="changeLikeState") 
             img(src="~@/assets/like.png", width="60%")
             .count 1
           .commentWrap 
             img(src="~@/assets/repost.png", width="60%")
             .count 3
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isLiked: false,
+    };
+  },
+  methods: {
+    changeLikeState() {
+      this.isLiked = !this.isLiked;
+    },
+  },
+};
+</script>  
 <style scoped>
 .wraps {
   margin-top: 5px;
